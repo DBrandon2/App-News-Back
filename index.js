@@ -5,9 +5,10 @@ require("dotenv").config();
 
 const app = express();
 
+
 const allowedOrigins = [
-  "http://localhost:5173",
-  "https://app-news-front.onrender.com",
+  "http://localhost:5173", // pour le dev local
+  "https://app-news-front.onrender.com", // pour le déploiement
 ];
 
 app.use(
